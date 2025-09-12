@@ -1,6 +1,11 @@
 # Contributing to xiaozhi-android-native
 
+[![English](https://img.shields.io/badge/English-blue)](CONTRIBUTING.md)
+[![中文](https://img.shields.io/badge/中文-red)](CONTRIBUTING_CN.md)
+
 Thank you for your interest in contributing to xiaozhi-android-native! This document provides guidelines and information for contributors.
+
+**Language / 语言**: [English](CONTRIBUTING.md) | [中文](CONTRIBUTING_CN.md)
 
 ## 🤝 How to Contribute
 

@@ -1,5 +1,10 @@
 # 快速开始指南
 
+[![English](https://img.shields.io/badge/English-blue)](QUICK_START.md)
+[![中文](https://img.shields.io/badge/中文-red)](QUICK_START_CN.md)
+
+**Language / 语言**: [English](QUICK_START.md) | [中文](QUICK_START_CN.md)
+
 ## 🚀 5分钟快速上手
 
 ### 1. 环境准备

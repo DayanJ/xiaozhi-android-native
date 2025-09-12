@@ -1,6 +1,11 @@
 # xiaozhi-android-native
 
+[![English](https://img.shields.io/badge/English-blue)](README.md)
+[![中文](https://img.shields.io/badge/中文-red)](README_CN.md)
+
 > 一个原生Android AI助手应用，具有语音交互功能，支持Dify对话和小智语音聊天。
+
+**Language / 语言**: [English](README.md) | [中文](README_CN.md)
 
 ## 🚀 功能特性
 

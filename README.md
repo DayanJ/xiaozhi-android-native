@@ -1,6 +1,11 @@
 # xiaozhi-android-native
 
+[![English](https://img.shields.io/badge/English-blue)](README.md)
+[![中文](https://img.shields.io/badge/中文-red)](README_CN.md)
+
 > A native Android AI assistant application with voice interaction capabilities, supporting Dify conversations and Xiaozhi voice chat.
+
+**Language / 语言**: [English](README.md) | [中文](README_CN.md)
 
 ## 🚀 Features
 

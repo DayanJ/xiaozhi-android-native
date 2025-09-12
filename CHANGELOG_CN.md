@@ -1,6 +1,11 @@
 # 变更日志
 
+[![English](https://img.shields.io/badge/English-blue)](CHANGELOG.md)
+[![中文](https://img.shields.io/badge/中文-red)](CHANGELOG_CN.md)
+
 xiaozhi-android-native的所有重要更改都将记录在此文件中。
+
+**Language / 语言**: [English](CHANGELOG.md) | [中文](CHANGELOG_CN.md)
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 本项目遵循 [语义化版本](https://semver.org/lang/zh-CN/)。

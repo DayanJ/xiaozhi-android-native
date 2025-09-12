@@ -1,6 +1,11 @@
 # Changelog
 
+[![English](https://img.shields.io/badge/English-blue)](CHANGELOG.md)
+[![中文](https://img.shields.io/badge/中文-red)](CHANGELOG_CN.md)
+
 All notable changes to xiaozhi-android-native will be documented in this file.
+
+**Language / 语言**: [English](CHANGELOG.md) | [中文](CHANGELOG_CN.md)
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
