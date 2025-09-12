@@ -36,7 +36,7 @@
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/xiaozhi-android-native.git
+git clone https://github.com/DayanJ/xiaozhi-android-native.git
 cd xiaozhi-android-native
 ```
 
