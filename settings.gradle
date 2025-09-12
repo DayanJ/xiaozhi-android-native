@@ -1,0 +1,31 @@
+pluginManagement {
+    repositories {
+        // 阿里云镜像
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+        
+        // 备用镜像源
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        // 阿里云镜像
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
+        
+        // 备用镜像源
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' }
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "AI Assistant"
+include ':app'

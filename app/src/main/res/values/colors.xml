@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Colors -->
+    <color name="primary">#FF000000</color>
+    <color name="primary_dark">#FF000000</color>
+    <color name="accent">#FF000000</color>
+    <color name="background">#FFF8F9FA</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="on_background">#FF000000</color>
+    <color name="on_surface">#FF000000</color>
+    
+    <!-- Brand Colors -->
+    <color name="blue">#FF2196F3</color>
+    
+    <!-- Chat Colors -->
+    <color name="user_message_bg">#FF007AFF</color>
+    <color name="assistant_message_bg">#FFF0F0F0</color>
+    <color name="user_message_text">#FFFFFFFF</color>
+    <color name="assistant_message_text">#FF000000</color>
+    
+    <!-- Status Colors -->
+    <color name="connected">#FF4CAF50</color>
+    <color name="disconnected">#FFF44336</color>
+    <color name="connecting">#FFFF9800</color>
+    
+    <!-- Voice Colors -->
+    <color name="voice_recording">#FF2196F3</color>
+    <color name="voice_cancelling">#FFF44336</color>
+    <color name="voice_idle">#FF9E9E9E</color>
+    
+    <!-- Gray Colors -->
+    <color name="gray_100">#FFF5F5F5</color>
+    <color name="gray_200">#FFEEEEEE</color>
+    <color name="gray_300">#FFE0E0E0</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_500">#FF9E9E9E</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="gray_700">#FF616161</color>
+    <color name="gray_800">#FF424242</color>
+    <color name="gray_900">#FF212121</color>
+    
+    <!-- Additional Colors -->
+    <color name="amber_600">#FFD97706</color>
+    <color name="indigo_600">#FF4F46E5</color>
+    <color name="green_600">#FF16A34A</color>
+    <color name="red">#FFF44336</color>
+</resources>

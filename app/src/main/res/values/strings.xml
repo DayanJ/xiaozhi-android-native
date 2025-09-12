@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">小智</string>
+    
+    <!-- Main Activity -->
+    <string name="messages">消息</string>
+    <string name="discovery">发现</string>
+    <string name="search_conversations">搜索对话</string>
+    <string name="no_conversations">没有对话</string>
+    <string name="click_plus_to_create">点击 + 创建新对话</string>
+    <string name="pinned_conversations">置顶对话</string>
+    <string name="all_conversations">全部对话</string>
+    
+    <!-- Chat Activity -->
+    <string name="voice">语音</string>
+    <string name="text">文本</string>
+    <string name="connected">已连接</string>
+    <string name="disconnected">未连接</string>
+    <string name="start_new_conversation">开始新对话</string>
+    <string name="input_message">输入消息...</string>
+    <string name="send">发送</string>
+    <string name="thinking">思考中...</string>
+    <string name="start_new_chat">开始新对话</string>
+    <string name="hold_to_speak">按住说话</string>
+    <string name="release_to_send">松开发送，上滑取消</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="cancelled">已取消发送</string>
+    <string name="uploading_image">图片上传中...</string>
+    <string name="image_upload_success">图片上传成功</string>
+    <string name="image_upload_failed">图片上传失败</string>
+    <string name="voice_only_for_xiaozhi">语音功能仅适用于小智对话</string>
+    <string name="image_only_for_dify">图片上传功能仅适用于Dify对话</string>
+    
+    <!-- Voice Call Activity -->
+    <string name="voice_call">语音通话</string>
+    <string name="mute">静音</string>
+    <string name="unmute">取消静音</string>
+    <string name="end_call">结束通话</string>
+    
+    <!-- Settings Activity -->
+    <string name="settings">设置</string>
+    <string name="dify_config">Dify配置</string>
+    <string name="xiaozhi_config">小智配置</string>
+    <string name="theme_settings">主题设置</string>
+    <string name="about">关于</string>
+    
+    <!-- Config -->
+    <string name="add_config">添加配置</string>
+    <string name="edit_config">编辑配置</string>
+    <string name="delete_config">删除配置</string>
+    <string name="config_name">配置名称</string>
+    <string name="api_url">API地址</string>
+    <string name="api_key">API密钥</string>
+    <string name="websocket_url">WebSocket地址</string>
+    <string name="mac_address">MAC地址</string>
+    <string name="token">Token</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="confirm_delete">确认删除</string>
+    <string name="config_deleted">配置已删除</string>
+    <string name="config_saved">配置已保存</string>
+    
+    <!-- Conversation Type -->
+    <string name="select_conversation_type">选择对话类型</string>
+    <string name="dify_chat">Dify对话</string>
+    <string name="xiaozhi_chat">小智对话</string>
+    <string name="dify_description">基于HTTP API的文本对话，支持图片上传</string>
+    <string name="xiaozhi_description">基于WebSocket的语音对话，支持实时语音交互</string>
+    
+    <!-- Common -->
+    <string name="ok">确定</string>
+    <string name="error">错误</string>
+    <string name="loading">加载中...</string>
+    <string name="retry">重试</string>
+    <string name="network_error">网络错误</string>
+    <string name="permission_denied">权限被拒绝</string>
+    <string name="unknown_error">未知错误</string>
+    
+    <!-- Permissions -->
+    <string name="permission_microphone">麦克风权限</string>
+    <string name="permission_camera">相机权限</string>
+    <string name="permission_storage">存储权限</string>
+    <string name="permission_rationale">此功能需要相关权限才能正常工作</string>
+    <string name="permission_denied_forever">权限被永久拒绝，请在设置中手动开启</string>
+    
+    <!-- Image Picker -->
+    <string name="select_image_source">选择图片源</string>
+    <string name="from_gallery">从相册选择</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_existing_photo">选择已有照片</string>
+    <string name="take_new_photo">拍摄新照片</string>
+</resources>

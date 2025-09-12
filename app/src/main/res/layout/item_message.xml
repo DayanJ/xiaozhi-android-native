@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="16dp">
+
+    <!-- 用户消息 -->
+    <LinearLayout
+        android:id="@+id/user_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/user_message_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/user_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/user_message_text"
+                android:textSize="16sp"
+                tools:text="这是用户发送的消息" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/user_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/gray_500"
+            android:textSize="12sp"
+            tools:text="12:34" />
+
+    </LinearLayout>
+
+    <!-- 助手消息 -->
+    <LinearLayout
+        android:id="@+id/assistant_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="60dp"
+            app:cardBackgroundColor="@color/assistant_message_bg"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp">
+
+            <TextView
+                android:id="@+id/assistant_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textColor="@color/assistant_message_text"
+                android:textSize="16sp"
+                tools:text="这是助手回复的消息" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/assistant_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/gray_500"
+            android:textSize="12sp"
+            tools:text="12:34" />
+
+    </LinearLayout>
+
+    <!-- 系统消息 -->
+    <LinearLayout
+        android:id="@+id/system_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/system_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textColor="@color/gray_600"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:text="--- 开始新对话 ---" />
+
+    </LinearLayout>
+
+</LinearLayout>

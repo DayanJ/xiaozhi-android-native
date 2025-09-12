@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_voice_call"
+        android:icon="@drawable/ic_phone"
+        android:title="@string/voice_call"
+        app:showAsAction="ifRoom" />
+        
+    <item
+        android:id="@+id/action_new_conversation"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/start_new_conversation"
+        app:showAsAction="never" />
+        
+</menu>
