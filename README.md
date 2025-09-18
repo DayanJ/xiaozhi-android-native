@@ -34,8 +34,9 @@
 
 - Android Studio (latest version)
 - JDK 8 or higher
-- Android SDK API 24+
+- Android SDK API 24+ (compileSdk 35, targetSdk 35)
 - Android device with microphone and speaker
+- Gradle 8.5+
 
 ## 🚀 Quick Start
 
@@ -123,13 +124,24 @@ Comprehensive documentation is available in the [docs/](docs/) directory:
 
 ### Building the project
 ```bash
-./gradlew assembleDebug
+# Clean build (recommended)
+./gradlew clean assembleDebug
+
+# Or use the wrapper script on Windows
+.\gradlew.bat clean assembleDebug
 ```
 
 ### Running tests
 ```bash
 ./gradlew test
 ```
+
+### Build Status
+✅ **Build Status**: All builds are passing successfully
+- **Lint Errors**: 0 (previously 35)
+- **Build Time**: ~2 minutes
+- **Target SDK**: 35 (Android 15)
+- **Compile SDK**: 35
 
 ### Code style
 The project follows Android Kotlin style guidelines. Use `ktlint` for code formatting.

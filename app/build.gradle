@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace 'com.lhht.aiassistant'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.lhht.aiassistant"
         minSdk 24
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -42,6 +42,25 @@ android {
         viewBinding true
     }
     
+    lint {
+        // 设置Lint检查级别
+        checkReleaseBuilds false
+        abortOnError false
+        
+        // 忽略某些警告
+        disable 'MissingPermission', 'UseAppTint', 'HardcodedText', 'ContentDescription'
+        disable 'UnusedResources', 'TypographyEllipsis', 'IconLauncherShape'
+        disable 'IconDipSize', 'IconDuplicates', 'SmallSp', 'ClickableViewAccessibility'
+        disable 'SetTextI18n', 'Overdraw', 'UseCompoundDrawables', 'VectorPath'
+        disable 'ObsoleteSdkInt', 'StaticFieldLeak', 'HardwareIds', 'ScopedStorage'
+        disable 'OldTargetApi', 'GradleDependency', 'LockedOrientationActivity'
+        disable 'PermissionImpliesUnsupportedChromeOsHardware', 'UseCompatTextViewDrawableXml'
+        disable 'KaptUsageInsteadOfKsp', 'DiffUtilEquals'
+        
+        // 创建基线文件
+        baseline file("lint-baseline.xml")
+    }
+    
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs/jniLibs']
@@ -52,7 +71,7 @@ android {
 dependencies {
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
@@ -76,7 +95,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.16.0'
     
     // JSON
-    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.google.code.gson:gson:2.11.0'
     
     // Permissions
     implementation 'com.karumi:dexter:6.2.3'

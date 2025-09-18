@@ -83,7 +83,19 @@ class ConfigAdapter(
         }
         
         override fun areContentsTheSame(oldItem: Any, newItem: Any): Boolean {
-            return oldItem == newItem
+            return when {
+                oldItem is DifyConfig && newItem is DifyConfig -> {
+                    oldItem.name == newItem.name && 
+                    oldItem.apiUrl == newItem.apiUrl &&
+                    oldItem.apiKey == newItem.apiKey
+                }
+                oldItem is XiaozhiConfig && newItem is XiaozhiConfig -> {
+                    oldItem.name == newItem.name && 
+                    oldItem.websocketUrl == newItem.websocketUrl &&
+                    oldItem.macAddress == newItem.macAddress
+                }
+                else -> false
+            }
         }
     }
 }

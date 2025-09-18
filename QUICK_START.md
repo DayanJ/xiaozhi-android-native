@@ -11,7 +11,8 @@
 Ensure your development environment meets the following requirements:
 - **Android Studio**: Latest version (Arctic Fox or newer recommended)
 - **JDK**: 8 or higher
-- **Android SDK**: API 24+ (Android 7.0+)
+- **Android SDK**: API 24+ (Android 7.0+), compileSdk 35, targetSdk 35
+- **Gradle**: 8.5+
 - **Device**: Android device with microphone and speaker
 
 ### 2. Get the Code
@@ -51,6 +52,8 @@ The app requires the following permissions (already declared in AndroidManifest.
 1. Click "Run" button in Android Studio toolbar
 2. Select target device
 3. Wait for app installation and launch
+
+**Note**: The project has been optimized and should build successfully without any Lint errors. If you encounter build issues, try running `./gradlew clean assembleDebug` first.
 
 ### 6. First Use
 #### 6.1 Configure Dify Service

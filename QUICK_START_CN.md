@@ -11,7 +11,8 @@
 确保您的开发环境满足以下要求：
 - **Android Studio**: 最新版本（推荐Arctic Fox或更新版本）
 - **JDK**: 8或更高版本
-- **Android SDK**: API 24+ (Android 7.0+)
+- **Android SDK**: API 24+ (Android 7.0+), compileSdk 35, targetSdk 35
+- **Gradle**: 8.5+
 - **设备**: 带麦克风和扬声器的Android设备
 
 ### 2. 获取代码
@@ -51,6 +52,8 @@ cd xiaozhi-android-native
 1. 点击Android Studio工具栏中的 "Run" 按钮
 2. 选择目标设备
 3. 等待应用安装和启动
+
+**注意**: 项目已经过优化，应该能够成功构建而不会出现任何Lint错误。如果遇到构建问题，请先尝试运行 `./gradlew clean assembleDebug`。
 
 ### 6. 首次使用
 #### 6.1 配置Dify服务

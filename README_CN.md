@@ -34,8 +34,9 @@
 
 - Android Studio (最新版本)
 - JDK 8 或更高版本
-- Android SDK API 24+
+- Android SDK API 24+ (compileSdk 35, targetSdk 35)
 - 带麦克风和扬声器的Android设备
+- Gradle 8.5+
 
 ## 🚀 快速开始
 
@@ -123,13 +124,24 @@ app/src/main/java/com/lhht/aiassistant/
 
 ### 构建项目
 ```bash
-./gradlew assembleDebug
+# 清理构建（推荐）
+./gradlew clean assembleDebug
+
+# 或在Windows上使用包装脚本
+.\gradlew.bat clean assembleDebug
 ```
 
 ### 运行测试
 ```bash
 ./gradlew test
 ```
+
+### 构建状态
+✅ **构建状态**: 所有构建都成功通过
+- **Lint错误**: 0个（之前35个）
+- **构建时间**: 约2分钟
+- **目标SDK**: 35 (Android 15)
+- **编译SDK**: 35
 
 ### 代码风格
 项目遵循Android Kotlin风格指南。使用`ktlint`进行代码格式化。

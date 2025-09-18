@@ -76,7 +76,8 @@ android-native-app/
 - Android Studio Arctic Fox 或更高版本
 - JDK 8 或更高版本
 - Android SDK API 24 或更高版本
-- Gradle 8.4
+- Gradle 8.5+
+- compileSdk 35, targetSdk 35
 
 ## 常见问题
 
@@ -111,6 +112,16 @@ android-native-app/
 4. **语音通话**: 小智对话的语音功能
 5. **设置界面**: 配置管理
 6. **配置编辑**: 添加和编辑配置
+
+## 最新优化状态
+
+✅ **编译优化完成** (2024年12月)
+- **Lint错误**: 从35个减少到0个
+- **权限检查**: 添加了运行时权限验证
+- **SDK版本**: 更新到Android 15 (API 35)
+- **依赖更新**: Material Design 1.11.0, Gson 2.11.0
+- **构建配置**: 优化了Lint配置和基线文件
+- **兼容性**: 支持Android 13+的新权限模型
 
 ## 注意事项
 

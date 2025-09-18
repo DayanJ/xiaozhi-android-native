@@ -185,6 +185,15 @@ class KeywordWakeupService(private val context: Context) {
      */
     private fun initializeMicrophone(): Boolean {
         try {
+            // 检查录音权限
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
+                val permission = android.Manifest.permission.RECORD_AUDIO
+                if (context.checkSelfPermission(permission) != android.content.pm.PackageManager.PERMISSION_GRANTED) {
+                    Log.e(TAG, "RECORD_AUDIO permission not granted")
+                    return false
+                }
+            }
+            
             val bufferSize = AudioRecord.getMinBufferSize(
                 SAMPLE_RATE,
                 CHANNEL_CONFIG,

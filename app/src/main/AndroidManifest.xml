@@ -10,13 +10,21 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     
-    <!-- 存储权限 -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 存储权限 - 更新为Android 13+的新权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" 
         android:maxSdkVersion="28" />
     
     <!-- 相机权限 -->
     <uses-permission android:name="android.permission.CAMERA" />
+    
+    <!-- 硬件特性声明 -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="true" />
     
     <!-- 蓝牙权限 -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -61,7 +69,7 @@
             android:name=".ui.voice.VoiceCallActivity"
             android:exported="false"
             android:parentActivityName=".ui.chat.ChatActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="fullSensor" />
             
         <activity
             android:name=".ui.conversation.ConversationTypeActivity"
